@@ -6,7 +6,9 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import logger from "morgan";
 
-import week1 from "./routes/users.js";
+import week1 from "./routes/week1.js";
+import week8 from "./routes/week8.js";
+import contacts from "./routes/createContact.js";
 
 const app = express();
 
@@ -18,6 +20,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/week1", week1);
+app.use("/week8", week8);
+app.use("/contacts", contacts);
 
 app.use(function (req, res, next) {
   res

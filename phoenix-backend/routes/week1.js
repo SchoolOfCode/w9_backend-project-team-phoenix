@@ -8,4 +8,6 @@ router.get("/", async function (req, res, next) {
   res.json({ message: "Success", payload: week1Info });
 });
 
+
+
 export default router;

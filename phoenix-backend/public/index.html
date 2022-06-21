@@ -2,21 +2,31 @@
   <head>
     <title>Your Generated Back-end</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
-
   </head>
 
   <body>
-    <h1>Express + ES6 Imports</h1>
-    <p>Welcome to the future 🔮</p>
+    <h1>Team Phoenix Admin Screen</h1>
     <main>
-      <h1>Add Contact</h1>
-      <button id="NewContact">Update Contacts</button>
-      <div id="createNewTV">
+      <h2>Add Contact</h2>
+      <div id="createNewContact">
         <input type="text" id="description" placeholder="Insert description" />
         <input type="text" id="linkedin" placeholder="Insert linkedin" />
         <input type="text" id="name" placeholder="Insert name" />
         <input type="text" id="twitter" placeholder="Insert twitter" />
         <button id="submitContact">Submit New Contact</button>
+      </div>
+      <h2>Add Category</h2>
+      <div id="createNewCategory">
+        <input
+          type="text"
+          id="CategoryName"
+          placeholder="Insert Category Name"
+        />
+        <input type="text" id="title" placeholder="Insert Title" />
+        <input type="text" id="content" placeholder="Insert content" />
+        <input type="text" id="url" placeholder="Insert url" />
+        <input type="text" id="img" placeholder="Insert img" />
+        <button id="submitCategory">Submit New Category</button>
       </div>
     </main>
     <script src="./js/index.js"></script>

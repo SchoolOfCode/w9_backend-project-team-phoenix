@@ -10,7 +10,8 @@
     "db:createcontacttable": "node -r dotenv/config ./db/scripts/createContactTable.js",
     "db:populateweektable": "node -r dotenv/config ./db/scripts/populateWeekTable.js",
     "db:populateCategoriestable": "node -r dotenv/config ./db/scripts/populateCategoryTable.js",
-    "db:populateContacttable": "node -r dotenv/config ./db/scripts/populateContactTable.js"
+    "db:populateContacttable": "node -r dotenv/config ./db/scripts/populateContactTable.js",
+    "db:dropContacttable": "node -r dotenv/config ./db/scripts/dropContactTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

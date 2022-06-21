@@ -9,6 +9,7 @@ import logger from "morgan";
 import week1 from "./routes/week1.js";
 import week8 from "./routes/week8.js";
 import contacts from "./routes/createContact.js";
+import category from "./routes/createCategory.js";
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/week1", week1);
 app.use("/week8", week8);
 app.use("/contacts", contacts);
+app.use("/category", category);
 
 app.use(function (req, res, next) {
   res

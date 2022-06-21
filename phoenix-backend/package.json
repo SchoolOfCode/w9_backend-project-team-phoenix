@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node ./bin/www.js",
+    "start": "nodemon -r dotenv/config ./bin/www.js",
     "db:createweektable": "node -r dotenv/config ./db/scripts/createWeekTable.js",
     "db:createcatagorytable": "node -r dotenv/config ./db/scripts/createCatagoryTable.js",
-    "db:createcontacttable": "node -r dotenv/config ./db/scripts/createContactTable.js"
+    "db:createcontacttable": "node -r dotenv/config ./db/scripts/createContactTable.js",
+    "db:populateweektable": "node -r dotenv/config ./db/scripts/populateWeekTable.js",
+    "db:populateCategoriestable": "node -r dotenv/config ./db/scripts/populateCategoryTable.js",
+    "db:populateContacttable": "node -r dotenv/config ./db/scripts/populateContactTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,6 +21,7 @@
     "pg": "^8.7.3"
   },
   "devDependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
   }
 }

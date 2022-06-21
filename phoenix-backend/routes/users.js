@@ -1,9 +1,11 @@
 import express from "express";
 const router = express.Router();
 
-/* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.json({ message: "I wish we had some information to give you ☹️" });
+import { getWeek1Info } from "../models/week1.js";
+
+router.get("/", async function (req, res, next) {
+  const week1Info = await getWeek1Info();
+  res.json({ message: "Success", payload: week1Info });
 });
 
 export default router;

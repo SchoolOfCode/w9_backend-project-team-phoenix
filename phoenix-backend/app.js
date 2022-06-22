@@ -7,6 +7,12 @@ import cors from "cors";
 import logger from "morgan";
 
 import week1 from "./routes/week1.js";
+import week2 from "./routes/week2.js";
+import week3 from "./routes/week3.js";
+import week4 from "./routes/week4.js";
+import week5 from "./routes/week5.js";
+import week6 from "./routes/week6.js";
+import week7 from "./routes/week7.js";
 import week8 from "./routes/week8.js";
 import contacts from "./routes/createContact.js";
 import category from "./routes/createCategory.js";
@@ -21,6 +27,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/week1", week1);
+app.use("/week2", week2);
+app.use("/week3", week3);
+app.use("/week4", week4);
+app.use("/week5", week5);
+app.use("/week6", week6);
+app.use("/week7", week7);
 app.use("/week8", week8);
 app.use("/contacts", contacts);
 app.use("/category", category);

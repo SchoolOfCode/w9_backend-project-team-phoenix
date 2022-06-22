@@ -11,7 +11,8 @@
     "db:populateweektable": "node -r dotenv/config ./db/scripts/populateWeekTable.js",
     "db:populateCategoriestable": "node -r dotenv/config ./db/scripts/populateCategoryTable.js",
     "db:populateContacttable": "node -r dotenv/config ./db/scripts/populateContactTable.js",
-    "db:dropContacttable": "node -r dotenv/config ./db/scripts/dropContactTable.js"
+    "db:dropContacttable": "node -r dotenv/config ./db/scripts/dropContactTable.js",
+    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -24,6 +25,8 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   }
 }

@@ -5,6 +5,7 @@ import __dirname from "./dirname.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import logger from "morgan";
+import basicAuth from "express-basic-auth";
 
 import week1 from "./routes/week1.js";
 import week2 from "./routes/week2.js";
@@ -34,8 +35,22 @@ app.use("/week5", week5);
 app.use("/week6", week6);
 app.use("/week7", week7);
 app.use("/week8", week8);
-app.use("/contacts", contacts);
-app.use("/category", category);
+app.use(
+  "/contacts",
+  basicAuth({
+    users: { admin: "supersecret" },
+    challenge: true,
+  }),
+  contacts
+);
+app.use(
+  "/category",
+  basicAuth({
+    users: { admin: "supersecret" },
+    challenge: true,
+  }),
+  category
+);
 
 app.use(function (req, res, next) {
   res

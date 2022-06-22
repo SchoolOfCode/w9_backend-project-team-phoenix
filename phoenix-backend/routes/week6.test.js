@@ -9,13 +9,13 @@ afterAll((done) => {
   done();
 });
 
-describe("GET response: receive week 1 data", () => {
+describe("GET response: receive week 6 data", () => {
   test("Check for HTTP status code is 200", async () => {
     //Arrange
     const expected = 200;
 
     //Act
-    const response = await request(app).get("/week1");
+    const response = await request(app).get("/week6");
     const actual = response.statusCode;
 
     //Assert
@@ -29,7 +29,7 @@ describe("GET response: receive week 1 data", () => {
     };
 
     //Act
-    const response = await request(app).get("/week1");
+    const response = await request(app).get("/week6");
     const actual = response.body;
 
     //Assert
@@ -60,7 +60,7 @@ describe("GET response: receive week 1 data", () => {
     };
 
     //Act
-    const response = await request(app).get("/week1");
+    const response = await request(app).get("/week6");
     const actual = response.body;
 
     //Assert

@@ -12,7 +12,9 @@
     "db:populateCategoriestable": "node -r dotenv/config ./db/scripts/populateCategoryTable.js",
     "db:populateContacttable": "node -r dotenv/config ./db/scripts/populateContactTable.js",
     "db:dropContacttable": "node -r dotenv/config ./db/scripts/dropContactTable.js",
-    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "db:dropWeektable": "node -r dotenv/config ./db/scripts/dropWeekTable.js",
+    "db:dropCategorytable": "node -r dotenv/config ./db/scripts/dropCategoryTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

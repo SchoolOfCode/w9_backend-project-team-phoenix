@@ -6,7 +6,7 @@ Create a backend for an app that will improve the lives of boot campers.
 
 # What problem does it solve?
 
-- What can help them with the vast amount of learning there is to do as a new developer.
+- What can help them with the vast amount of learning there is to do as a new developer?
 - What do they need?
 - What problem might they have that your application could solve for them?
 
@@ -90,9 +90,14 @@ Our project application included the following:
 
 ## Roadmap
 
-- Add PUT/PATCH/DELETE requests in our backend
-- Make the backend as a React app
-- Add login feature for every admin
+- Develop React admin page for all requests (PUT/PATCH/DELETE)
+- Add authentication for admins
 
+## Authors
+
+- [Abdullahi Mohamoud](https://github.com/Abdu11ahi)
+- [Khulvinder Mall](https://github.com/KhullyMall)
+- [Min-Chih Yang](https://github.com/Min-Chih)
+- [Russell Ventura](https://github.com/russellventura)
 
 

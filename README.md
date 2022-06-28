@@ -40,20 +40,20 @@ Our project application included the following:
   "message": "Success",
   "payload": [
     {
-      "id": 1,
-      "week_number": 1,
-      "catagory_id": 1,
-      "contact_id": 2,
-      "catagory_name": "Useful links",
-      "title": "The shapes of css",
-      "content": "CSS is capable of making all sorts of shapes. Squares and rectangles are easy, as they are the natural shapes of the web. Add a width and height and you have the exact size rectangle you need. Add border-radius and you can round that shape, and enough of it you can turn those rectangles into circles and ovals.",
-      "url": "https://css-tricks.com/the-shapes-of-css/",
-      "img": null,
-      "name": "Chris Meah",
-      "heading": "Contact Information",
-      "twitter": "https://twitter.com/TheMeahCat",
-      "linkedin": "https://www.linkedin.com/in/chrismeah/",
-      "description": "SOC CEO"
+      id: 1,
+      week_number: 1,
+      catagory_id: 1,
+      contact_id: 2,
+      catagory_name: "Useful links",
+      title: "The shapes of css",
+      content: "CSS is capable of making all sorts of shapes. Squares and rectangles are easy, as they are the natural shapes of the web. Add a width and height and you have the exact size rectangle you need. Add border-radius and you can round that shape, and enough of it you can turn those rectangles into circles and ovals.",
+      url: "https://css-tricks.com/the-shapes-of-css/",
+      img: null,
+      name: "Chris Meah",
+      heading: "Contact Information",
+      twitter: "https://twitter.com/TheMeahCat",
+      linkedin: "https://www.linkedin.com/in/chrismeah/",
+      description: "SOC CEO"
     }]
 }
 ```
@@ -75,6 +75,15 @@ Our project application included the following:
 | twitter    |  Url to the contact's twitter         | String   |
 | linkedin    |   Url to the contact's LinkedIn        | String   |
 | description    |  Title of the Contact         | String   |
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm test
+```
+The following test makes sure that all get responses send a 200 status code, makes sure the payload is an array, and the array contains objects with specific format.
 
 ## Libraries
 

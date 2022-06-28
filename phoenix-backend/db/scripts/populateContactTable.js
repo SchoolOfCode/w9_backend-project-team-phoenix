@@ -3,7 +3,7 @@ import { contactInfo } from "../../lib/data.js";
 
 async function populateContactsTable() {
   for (let i = 0; i < contactInfo.length; i++) {
-    const res = await query(
+    const response = await query(
       `INSERT INTO contacts (
         name, heading, twitter, linkedin, description
         ) VALUES ($1, $2, $3, $4, $5)`,

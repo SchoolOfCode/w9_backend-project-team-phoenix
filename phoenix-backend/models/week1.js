@@ -8,6 +8,6 @@ export async function getWeek1Info() {
   ON weeks.contact_id = contacts.contact_id
   WHERE week_number = 1
   ORDER BY id;`);
-  return res.rows;
+  return res.rows; //Get info from table with week_number = 1
 }
 

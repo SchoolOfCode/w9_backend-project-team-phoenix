@@ -1,22 +1,98 @@
-# National Bootcamp - Week Nine Project Brief
 
-For your project, you’ll be using what you’ve learned on the course so far to try and improve the lives of your users. In this case, the users will be close to home: bootcampers!
+# Backend Brief
 
-To do this, you’ll need to take the time to understand your user (a bootcamper), their experiences, and their problems. Specifically, it might be good to focus on how to enhance the remote experience of a bootcamper, or what can help them with the vast amount of learning there is to do as a new developer. What do they need? What problem might they have that your application could solve for them? How can you get into the mindset of your user and keep them at the centre of your problem-solving?
+Create a backend for an app that will improve the lives of boot campers.
 
-The high level outcomes from this project should be:
 
-- A minimum viable product (MVP) showcasing an innovative full stack application which meets the user need you’ve identified
-- A presentation, complete with how you worked as a team and a demonstration of the project
+# What problem does it solve?
 
-Your project application might include the following:
+- What can help them with the vast amount of learning there is to do as a new developer.
+- What do they need?
+- What problem might they have that your application could solve for them?
 
-- Include a user experience created in React
-- Build a REST API which is used by your front-end
-- Be supported by a Postgresql database with multiple tables
-- Be built and managed in an agile way
-- Utilise testing for ensuring robust code
+Create a minimum viable product (MVP) backend showcasing an innovative full stack application which meets the user need you’ve identified
 
-Remember, you only have a few days to code a solution, so being agile is key. That means brainstorming what you want to build, and working in sprints to deliver value each time. After each sprint, you can reassess and either continue on course or iterate towards a better solution. Have a plan which is incremental steps, rather than all or nothing.
+# Features
 
-Click the link to see the [Project Guidelines](https://github.com/SchoolOfCode/project-guidelines/blob/master/project-week.md)
+Our project application included the following:
+
+- A REST API to be available for a front end
+- A PostgreSQL database with multiple tables
+- Built and managed in an agile way
+- Utilised testing for ensuring robust code
+
+
+# Usage
+ 
+## Example Routes
+
+
+| Method | Path             | Additional Info | Result                                         | Response                                  |
+| ------ | ---------------- | --------------- | ---------------------------------------------- | ----------------------------------------- |
+| GET    | /week1          | The week number is changable, depends on what week you want to GET   | all resources for week 1                                      | { success: Boolean, payload: Week 1 Array } |
+| POST    | /contact          | { body } only can be accessed by the backend admin  | Create new contact                                     | { success: Boolean, payload: new contact } |
+| POST    | /category          | { body } only can be accessed by the backend admin   | Create new category                                     | { success: Boolean, payload: new category } |
+
+## Expected GET Response
+
+```javascript
+{
+  "message": "Success",
+  "payload": [
+    {
+      "id": 1,
+      "week_number": 1,
+      "catagory_id": 1,
+      "contact_id": 2,
+      "catagory_name": "Useful links",
+      "title": "The shapes of css",
+      "content": "CSS is capable of making all sorts of shapes. Squares and rectangles are easy, as they are the natural shapes of the web. Add a width and height and you have the exact size rectangle you need. Add border-radius and you can round that shape, and enough of it you can turn those rectangles into circles and ovals.",
+      "url": "https://css-tricks.com/the-shapes-of-css/",
+      "img": null,
+      "name": "Chris Meah",
+      "heading": "Contact Information",
+      "twitter": "https://twitter.com/TheMeahCat",
+      "linkedin": "https://www.linkedin.com/in/chrismeah/",
+      "description": "SOC CEO"
+    }]
+}
+```
+## Payload Content
+
+|Name | Description            | Type|
+| ------ | ---------------- | --------------- | 
+| id   | Unique id for each resource          | Integer   | 
+| week_number    | Week number          | Integer  | 
+| catagory_id    | id for each category resource        | Integer   | 
+| contact_id    | id for each contact resource           | Integer   | 
+| catagory_name    | Resource topic          | String   | 
+| title    |   The resource title        | String   | 
+| content    |  Description of the resource       | String   | 
+| url    |  Link to the resource         | String   | 
+| img    |  Link to resource image        | String   | 
+| name   |  Name of the contact        | String   | 
+| heading    | Section title          | String   | 
+| twitter    |  Url to the contact's twitter         | String   |
+| linkedin    |   Url to the contact's LinkedIn        | String   |
+| description    |  Title of the Contact         | String   |
+
+## Libraries
+
+ - [express-generator-esmoduless](https://www.npmjs.com/package/express-generator-esmodules)
+ - [dotenv](https://www.npmjs.com/package/dotenv)
+ - [cors](https://www.npmjs.com/package/cors)
+ - [node-postgres](https://www.npmjs.com/package/pg)
+ - [nodemon](https://www.npmjs.com/package/nodemon)
+ - [jest](https://www.npmjs.com/package/jest)
+ - [supertest](https://www.npmjs.com/package/supertest)
+ - [Heroku](https://www.heroku.com/)
+
+
+## Roadmap
+
+- Add PUT/PATCH/DELETE requests in our backend
+- Make the backend as a React app
+- Add login feature for every admin
+
+
+

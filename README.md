@@ -1,10 +1,15 @@
+![Logo](https://russellventura.co.uk/wp-content/uploads/2022/06/TeamPhoenix.png)
+TEAM PHOENIX
 
 # Backend Brief
 
 Create a backend for an app that will improve the lives of boot campers.
 
 
-# What problem does it solve?
+
+## What problem does our app solve?
+
+We asked ourselves the following 3 questions:
 
 - What can help them with the vast amount of learning there is to do as a new developer?
 - What do they need?
@@ -33,7 +38,7 @@ Our project application included the following:
 | POST    | /contact          | { body } only can be accessed by the backend admin  | Create new contact                                     | { success: Boolean, payload: new contact } |
 | POST    | /category          | { body } only can be accessed by the backend admin   | Create new category                                     | { success: Boolean, payload: new category } |
 
-## Expected GET Response
+## Example GET Response
 
 ```javascript
 {
@@ -76,7 +81,7 @@ Our project application included the following:
 | linkedin    |   Url to the contact's LinkedIn        | String   |
 | description    |  Title of the Contact         | String   |
 
-## Running Tests
+# Running Tests
 
 To run tests, run the following command
 
@@ -85,7 +90,7 @@ To run tests, run the following command
 ```
 The following test makes sure that all get responses send a 200 status code, makes sure the payload is an array, and the array contains objects with specific format.
 
-## Libraries
+# Libraries
 
  - [express-generator-esmoduless](https://www.npmjs.com/package/express-generator-esmodules)
  - [dotenv](https://www.npmjs.com/package/dotenv)
@@ -97,16 +102,20 @@ The following test makes sure that all get responses send a 200 status code, mak
  - [Heroku](https://www.heroku.com/)
 
 
-## Roadmap
+# Roadmap
 
 - Develop React admin page for all requests (PUT/PATCH/DELETE)
 - Add authentication for admins
 
-## Authors
+# Authors
 
 - [Abdullahi Mohamoud](https://github.com/Abdu11ahi)
 - [Khulvinder Mall](https://github.com/KhullyMall)
 - [Min-Chih Yang](https://github.com/Min-Chih)
 - [Russell Ventura](https://github.com/russellventura)
+
+# Here's a link to our frontend repo
+
+- [@Frontend Repo](https://github.com/SchoolOfCode/w9_frontend-project-team-phoenix)
 
 

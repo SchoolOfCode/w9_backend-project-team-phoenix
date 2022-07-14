@@ -112,7 +112,6 @@ The following test makes sure that all get responses send a 200 status code, mak
 - [Abdullahi Mohamoud](https://github.com/Abdu11ahi)
 - [Khulvinder Mall](https://github.com/KhullyMall)
 - [Min-Chih Yang](https://github.com/Min-Chih)
-- [Russell Ventura](https://github.com/russellventura)
 
 # Here's a link to our frontend repo
 
